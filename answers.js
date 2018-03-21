@@ -172,5 +172,32 @@ for(var i=0; i<1000; i++){
 	}
 }
 
+//Hungry for More
+//1.
+function isocelesTri(height){
+	for(var i=1; i<=height; i++){
+		var length = "";
+		for(var j=0; j<i; j++){
+			length += "#";
+		}
+		console.log(length);
+	}
+
+}
+
+//2.
+function isocelesTriUpsideDown(height){
+	for(var i=height; i>=0; i--){
+		var length = "";
+		for(var j=0; j<i; j++){
+			length += "#";
+		}
+		console.log(length);
+	}
+
+}
+
+
+
 
 
