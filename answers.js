@@ -100,3 +100,55 @@ for (i=0; i<ninTurtles.length; i++){
 	console.log(ninTurtles[i].toUpperCase());
 }
 
+//Return of the Closets
+  const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+//Alien Attire
+//1.
+var kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+
+//Dress Us Up
+//1.
+console.log("Kristyn will be wearing " + kristynsCloset[3] + ", " + kristynsCloset[4] + ", and " + kristynsCloset[1] + ".");
+
+console.log("Kristyn will be wearing " + kristynsCloset[5] + ", " + kristynsCloset[6] + ", and " + kristynsCloset[4] + ".");
+
+console.log("Kristyn will be wearing " + kristynsCloset[2] + ", " + kristynsCloset[1] + ", and " + kristynsCloset[0] + ".");
+
+console.log("Thom will be wearing " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".");
+
+console.log("Thom will be wearing " + thomsCloset[0][3] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][0] + ".");
+
+console.log("Thom will be wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + ".");
+
+
+
