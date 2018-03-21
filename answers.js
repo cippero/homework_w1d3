@@ -70,3 +70,23 @@ for(var i=1; i<=100; i++){
 		console.log(i);
 	}
 }
+
+//Getting to Know You
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+
+//1.
+thom.shift();
+thom.unshift("Gameboy");
+
+//2.
+karolin[1] += 1;
+
+//3.
+matt[2] = "Gotham City";
+
+//4.
+kristyn.pop();
+kristyn.push("Brooklyn");
