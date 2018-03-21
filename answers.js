@@ -150,5 +150,21 @@ console.log("Thom will be wearing " + thomsCloset[0][3] + ", " + thomsCloset[1][
 
 console.log("Thom will be wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + ".");
 
+//Dirty Laundry
+//1.
+for (i=0; i<kristynsCloset.length; i++){
+	console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+//Inventory
+//2.
+for (var i=0; i<thomsCloset.length; i++){
+	for (var j=0; j<thomsCloset[i].length; j++){
+		console.log(`Thom's inventory includes ${thomsCloset[i][j]}`);
+	}
+}
+
+
+
 
 
