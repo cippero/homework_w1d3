@@ -138,17 +138,9 @@ thomsCloset[2].push(kristynsShoe);
 
 //Dress Us Up
 //1.
-console.log("Kristyn will be wearing " + kristynsCloset[3] + ", " + kristynsCloset[4] + ", and " + kristynsCloset[1] + ".");
+console.log("Kristyn will be wearing " + kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ", " + kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ", and " + kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)] + ".");
 
-console.log("Kristyn will be wearing " + kristynsCloset[5] + ", " + kristynsCloset[6] + ", and " + kristynsCloset[4] + ".");
-
-console.log("Kristyn will be wearing " + kristynsCloset[2] + ", " + kristynsCloset[1] + ", and " + kristynsCloset[0] + ".");
-
-console.log("Thom will be wearing " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".");
-
-console.log("Thom will be wearing " + thomsCloset[0][3] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][0] + ".");
-
-console.log("Thom will be wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + ".");
+console.log("Thom will be wearing " + thomsCloset[0][Math.floor(Math.random()*thomsCloset[0].length)] + ", " + thomsCloset[1][Math.floor(Math.random()*thomsCloset[1].length)] + ", and " + thomsCloset[2][Math.floor(Math.random()*thomsCloset[2].length)] + ".");
 
 //Dirty Laundry
 //1.
@@ -204,10 +196,10 @@ function medianVal() {
 	var sortedNums = nums.sort((a,b) =>{
 		return a-b;
 	})
-	if (sortedNums.length % 1 === 0){
-		console.log(sortedNums[Math.floor(sortedNums.length/2)]);
+	if (sortedNums.length % 2 === 0){
+		console.log((sortedNums[Math.floor(sortedNums.length/2)] + sortedNums[Math.floor(sortedNums.length/2)+1])/2);
 	} else {
-		console.log(sortedNums[sortedNums.length/2]);
+		console.log(sortedNums[Math.floor(sortedNums.length/2)]);
 	}
 }
 
