@@ -197,7 +197,18 @@ function isocelesTriUpsideDown(height){
 
 }
 
+//Find the Median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
-
+function medianVal() {
+	var sortedNums = nums.sort((a,b) =>{
+		return a-b;
+	})
+	if (sortedNums.length % 1 === 0){
+		console.log(sortedNums[Math.floor(sortedNums.length/2)]);
+	} else {
+		console.log(sortedNums[sortedNums.length/2]);
+	}
+}
 
 
